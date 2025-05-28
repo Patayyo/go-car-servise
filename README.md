@@ -12,7 +12,8 @@
  * docker-compose up --build
 
  * REST API будет доступен: http://localhost:8080
- * Swagger: http://localhost:8080/swagger/index.html для инициализации swagger - swag init --dir ./cmd,./internal/handler --output ./docs --parseDependency --parseInternal
+ * Swagger: http://localhost:8080/swagger/index.html для инициализации swagger
+ * swag init --dir ./cmd,./internal/handler --output ./docs --parseDependency --parseInternal
 
 Доступрные маршруты
 Auth
