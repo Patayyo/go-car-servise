@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package vehicle;
+
+option go_package = "github.com/Patayyo/car-service/internal/transport/grpc/vehiclepb;vehiclepb";
+
+message Vehicle {
+    uint64 id = 1;
+    string make = 2;
+    string mark = 3;
+    int32 year = 4;
+}
+
+message CreateVehicleRequest {
+    string make = 1;
+    string mark = 2;
+    int32 year = 3;
+}
+
+message GetVehicleRequest {
+    uint64 id = 1;
+}
+
+message VehicleResponse {
+    Vehicle vehicle = 1;
+}
+
+message Empty {}
+
+message VehicleListResponse {
+    repeated Vehicle vehicles = 1;
+}
+
+service VehicleService {
+    rpc CreateVehicle(CreateVehicleRequest) returns (VehicleResponse);
+    rpc GetVehicleByID(GetVehicleRequest) returns (VehicleResponse);
+    rpc ListVehicle(Empty) returns (VehicleListResponse);
+}
