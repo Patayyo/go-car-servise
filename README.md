@@ -1,5 +1,5 @@
 1. Запуск проекта/Project start
- * git clone https://github.com/patayyo/go-car-service.git
+ * git clone https://github.com/Patayyo/go-car-servise.git
  * cd go-car-service
 
 2. Создайте .env файл/Create .env file
