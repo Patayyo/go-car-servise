@@ -1,14 +1,14 @@
- * Запуск проекта/Project start
+1. Запуск проекта/Project start
 git clone https://github.com/patayyo/go-car-service.git
 cd go-car-service
 
- * Создайте .env файл/Create .env file
+2. Создайте .env файл/Create .env file
 DB_NAME=your_db_name
 DB_USER=your_db_username
 DB_PASSWORD=your_db_password
 JWT_SECRET=your_jwt_secret_key
 
- * Собрать и запустить контейнеры/Create and start dockers
+3. Собрать и запустить контейнеры/Create and start dockers
 docker-compose up --build
 
  * REST API будет доступен: http://localhost:8080
